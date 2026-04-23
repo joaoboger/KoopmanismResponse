@@ -116,6 +116,7 @@ def main():
         "Unperturbed Settings": unperturbed_map,
     }
     data_path = get_data_folder_path()
+    data_path.mkdir(parents=True, exist_ok=True)
     f_name = "response_one_dimensional_map.pkl"
 
     with open(data_path / f_name, "wb") as f:
